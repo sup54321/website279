@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORLD PEACE AND DEVELOPMENT GROUP LIMITED</title>
+<link rel="stylesheet" href="assets/css/main.css">
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
+    html { scroll-behavior: smooth; }
+
+    /* Header */
+    #header { background:#2c3e50; color:white; text-align:center; padding:60px 20px; }
+    #header h1 { font-size:2.5em; margin-bottom:10px; }
+    nav ul { list-style:none; display:flex; justify-content:center; gap:30px; margin-top:20px; }
+    nav ul li { position: relative; }
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; transition: color 0.3s; }
+    nav ul li a:hover { color:#f39c12; }
+
+    /* Dropdown Menu */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0;
+        background:#34495e;
+        min-width: 240px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        z-index: 10;
+    }
+    .dropdown-content li { width: 100%; }
+    .dropdown-content li a {
+        display: block;
+        padding: 12px 15px;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+    .dropdown-content li a:hover { background:#4a5b72; }
+
+    /* Only show dropdown on hover for desktop */
+    @media(min-width: 769px) {
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    }
+
+    /* Mobile active state */
+    .dropdown.active .dropdown-content {
+        display: block;
+        position: static;
+        box-shadow: none;
+        background:#34495e;
+        margin-top: 10px;
+    }
+
+    /* Section styles */
+    a.section-link { text-decoration:none; display:block; }
+    section { padding:80px 20px; display:flex; align-items:center; gap:40px; border-radius:10px; overflow:hidden; margin:20px; transition: background 0.3s; }
+    section img { width:40%; border-radius:10px; transition: transform 0.3s, box-shadow 0.3s; }
+    section img:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    section .content { width:60%; color: #2c3e50; }
+    section h3 { font-size:2em; margin-bottom:15px; }
+    section p { font-size:1.1em; line-height:1.6; margin-bottom:20px; }
+
+    /* Buttons under text */
+    section button {
+        padding:12px 25px;
+        font-size:1em;
+        background:#34495e; /* Footer color */
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+        transition: background 0.3s;
+    }
+    section button:hover { background:#4a5b72; }
+
+    /* Read More Section */
+    .read-more-section {
+        position: relative;
+        background: url('images/read-more-bg.jpg') no-repeat center center/cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        margin: 40px 20px;
+    }
+    .read-more-section:hover { transform: scale(1.02); }
+    .read-more-section .overlay {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .read-more-section .overlay h3 { font-size: 2.5em; margin-bottom: 15px; }
+    .read-more-section .overlay p { font-size: 1.2em; max-width: 700px; margin-bottom: 20px; }
+    .read-more-section .overlay button {
+        background:#34495e;
+        padding:12px 25px;
+        font-size:1em;
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+        transition: background 0.3s;
+    }
+    .read-more-section .overlay button:hover { background:#4a5b72; }
+
+    /* Footer */
+    footer { background:#34495e; color:white; text-align:center; padding:60px 20px; }
+    footer .button { background:#34495e; color:white; padding:12px 30px; text-decoration:none; border-radius:5px; transition: background 0.3s; }
+    footer .button:hover { background:#4a5b72; }
+
+    @media(max-width:768px){
+        nav ul { flex-direction: column; gap:15px; }
+        section { flex-direction:column; text-align:center; }
+        section img, section .content { width:100%; }
+        .read-more-section { height:300px; }
+        .read-more-section .overlay h3 { font-size:2em; }
+        .read-more-section .overlay p { font-size:1em; }
+    }
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>WORLD PEACE AND DEVELOPMENT GROUP LIMITED</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="who.html">Who We Are</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li class="dropdown">
+                    <a href="#">Projects ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="investment.html">Driving Global Investment</a></li>
+                        <li><a href="infrastructure.html">Advancing Infrastructure & Energy</a></li>
+                        <li><a href="urban.html">Transforming Urban Development</a></li>
+                        <li><a href="renewal.html">Driving Urban Renewal</a></li>
+                        <li><a href="partnership.html">Strategic Partnership</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About Section -->
+    <a href="about.html" class="section-link">
+        <section>
+            <img src="images/about-us.jpg" alt="About Us">
+            <div class="content">
+                <h3>About Us</h3>
+                <p>WORLD PEACE AND DEVELOPMENT GROUP LIMITED is dedicated to fostering global peace and sustainable development through impactful initiatives and community empowerment.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+    </a>
+
+    <!-- Who We Are Section -->
+    <a href="who.html" class="section-link">
+        <section>
+            <img src="images/who-we-are.jpg" alt="Who We Are">
+            <div class="content">
+                <h3>Who We Are</h3>
+                <p>We are a passionate team of changemakers, committed to creating positive change and empowering communities worldwide.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+    </a>
+
+    <!-- Mission Section -->
+    <a href="mission.html" class="section-link">
+        <section>
+            <img src="images/our-mission.jpg" alt="Our Mission">
+            <div class="content">
+                <h3>Our Mission</h3>
+                <p>To promote peace, drive sustainable development, and empower communities through innovative solutions and collaborative efforts.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+    </a>
+
+    <!-- Read More Section -->
+    <a href="read.html" class="section-link">
+        <section class="read-more-section">
+            <div class="overlay">
+                <h3>Discover More</h3>
+                <p>Explore extended content about our mission, values, and initiatives for peace and development.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 WORLD PEACE AND DEVELOPMENT GROUP LIMITED. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown Toggle Script -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdown = document.querySelector(".dropdown > a");
+        const parent = dropdown.parentElement;
+
+        dropdown.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault(); // prevent page jump
+                parent.classList.toggle("active");
+            }
+        });
+
+        // Close dropdown if clicked outside (mobile only)
+        document.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+                if (!parent.contains(e.target)) {
+                    parent.classList.remove("active");
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>
